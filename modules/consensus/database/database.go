@@ -143,6 +143,8 @@ func (w boltWrapper) Close() error {
 }
 
 // Block is a a block stored in the database along with relevant metadata.
+// TODO: implement SiaMarshaler and SiaUnmarshaler.
+// TODO: optimize Block.ID()?
 type Block struct {
 	types.Block
 	Height      types.BlockHeight
